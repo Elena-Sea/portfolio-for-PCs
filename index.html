@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container container--flex">
+        <!-- navigation -->
+        <nav class="nav">
+          
+          <a href="./index.html" class="logo">Web<span class="logo__studio">Portfolio</span></a>
+
+          <button type="button" class="button-menu" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40">
+              <use class="button-menu__open" href="./images/icons1.svg#icon-menu-opt"></use>
+    
+              <use class="button-menu__close" href="./images/icons1.svg#icon-close-cross-opt"></use>
+            </svg>
+          </button>
+    
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Home</a>
+            </li>
+          
+            <li class="site-nav__item">
+              <a href="./projects.html" class="site-nav__link">Project</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./contacts.html" class="site-nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- mobile-tablet modal menu -->
+        
+        <div class="modal-menu" data-menu>
+        
+          <nav class="navigation">
+            <ul class="modal-nav">
+              <li class="modal-nav__item">
+                <a href="./index.html" class="modal-nav__link modal-nav__link--current">Home</a>
+              </li>
+             
+              <li class="modal-nav__item">
+                <a href="./projects.html" class="modal-nav__link">Projects</a>
+              </li>
+              <li class="modal-nav__item">
+                <a href="./contacts.html" class="modal-nav__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        
+        
+          <ul class="modal-links">
+            <li class="modal-links__link">
+              <a href="#" class="modal-links__name">Facebook</a>
+            </li>
+            <li class="modal-links__link">
+              <a href="#" class="modal-links__name">Linkedin</a>
+            </li>
+            <li class="modal-links__link">
+              <a href="#" class="modal-links__name">Instagram</a>
+            </li>
+            <li class="modal-links__link">
+              <a href="#" class="modal-links__name">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        
+          
+    
+      </div>
+    
+      <main>
+        <section class="section">
+          <div class="container">
+            <h1 class="container__title ">WELCOME!</h1>
+            <p>
+              Thank you for stopping by. <br/> Please have a look around. In the projects section I put the link to my team web project. Have fun.
+            </p>
+          </div>
+        </section>
+      </main>
+    
+    </header>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+
+</html>

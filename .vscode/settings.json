@@ -1,0 +1,28 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "/**/node_modules/**",
+    "/.vscode/**"
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveServer.settings.port": 5501
+
+  // "files.exclude": {
+  //     "out": false // set this to true to hide the "out" folder with the compiled JS files
+  // },
+  // "search.exclude": {
+  //     "out": true // set this to false to include "out" folder in search results
+  // }
+}

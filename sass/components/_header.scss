@@ -1,0 +1,160 @@
+.header {
+	border-bottom: 1px solid #ECECEC;
+}
+.container--flex {
+	position:relative;
+    display: flex;
+	align-items: center;
+}
+
+.nav {
+	min-height: 60px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: auto;
+
+	@media screen and (min-width: 768px) {
+		margin-right: auto;
+		min-height: 80px;
+	}
+}
+
+.site-nav {
+	display: flex;
+    
+    &__item{
+		position: relative;
+		display: flex;
+		align-items: center;
+
+    }
+    &__item:not(:last-child){
+		margin-right: 50px;
+    }
+
+	@media  screen and (max-width: 767px) {
+		display: none;
+	}	
+
+	&__link {
+		display: block;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		
+
+		color: $headers-color;
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		
+		&:hover,
+		&:focus {
+			color: $conditions-color;
+    	}
+	}
+
+	&__link--current {
+		color: $conditions-color;
+		font-size: 24px;
+
+	}
+}
+
+.contacts {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.17;
+	letter-spacing: 0.02em;
+
+	@media  screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media  screen and (min-width: 1200px) {
+		display: flex;
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		font-size: 14px;
+		line-height: 1.14;
+	}
+
+	&__item:not(:last-child){
+		margin-bottom: 10px;
+
+		@media  screen and (min-width: 1200px) {
+		margin-right: 30px;
+		margin-bottom: 0;
+		}
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link:focus,
+    &__link:hover {
+        color: $conditions-color;
+    } 
+
+    &__icon {
+	margin-right: 10px;
+	fill: currentColor;
+	}
+
+}
+
+.button-menu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 2;
+
+	width: 40px;
+	height: 40px;
+
+	@extend %flex;
+	
+	border: none;
+	background-color: transparent;
+	padding: 0;
+
+	@media  screen and (min-width: 767px) {
+		display: none;
+	}
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus  {
+		fill: $conditions-color;
+    }
+
+	&__close {
+		display: none;
+	}
+
+	&.is-open .button-menu__close {
+		display: block;
+	}
+
+	&.is-open .button-menu__open {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
